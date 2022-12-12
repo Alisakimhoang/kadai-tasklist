@@ -14,7 +14,7 @@
             </c:forEach>
         </ul>
 
-        <p><a href="${pageContext.request.contextPath}/new">Post new message(新しいメッセージを投稿)</a></p>
+        <p><a href="${pageContext.request.contextPath}/new">Post new task (新しいタスクを投稿)</a></p>
 
     </c:param>
 </c:import>

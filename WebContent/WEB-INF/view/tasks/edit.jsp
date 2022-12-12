@@ -4,14 +4,14 @@
     <c:param name="content">
     <c:choose>
             <c:when test="${task != null}">
-        <h2>id : ${task.id} Message edit page (のメッセージ編集ページ)</h2>
+        <h2>id : ${task.id}  Task edit page (のタスク編集ページ)</h2>
 
         <form method="POST" action="${pageContext.request.contextPath}/update">
             <c:import url="_form.jsp" />
         </form>
 
         <p><a href="${pageContext.request.contextPath}/index">Return to list (一覧に戻る)</a></p>
-        <p><a href="#" onclick="confirmDestroy();">Delete this message (このメッセージを削除)</a></p>
+        <p><a href="#" onclick="confirmDestroy();">Delete this task (このタスクを削除)</a></p>
         <form method="POST" action="${pageContext.request.contextPath}/destroy">
             <input type="hidden" name="_token" value="${_token}" />
         </form>
