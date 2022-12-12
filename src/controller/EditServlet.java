@@ -43,9 +43,9 @@ public class EditServlet extends HttpServlet {
         request.setAttribute("_token", request.getSession().getId());
 
         // メッセージIDをセッションスコープに登録
-        request.getSession().setAttribute("task", m.getId());
+        request.getSession().setAttribute("task_id", m.getId());
 
-        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/view/task/edit.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/view/tasks/edit.jsp");
         rd.forward(request, response);
     }
 }

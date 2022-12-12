@@ -5,4 +5,4 @@
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
-<button type="submit">POST(投稿)</button>
+<button type="submit">POST (投稿)</button>
